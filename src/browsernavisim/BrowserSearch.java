@@ -9,5 +9,7 @@ package browsernavisim;
  * @author USER
  */
 public class BrowserSearch {
-    
+    public int linearSearch(String[] pages, int count, String keyword) {
+    return -1;
+}
 }
