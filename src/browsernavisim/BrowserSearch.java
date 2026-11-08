@@ -17,4 +17,9 @@ public class BrowserSearch {
         if (count < 0 || count > pages.length) {
             return -1;
         }
+        String key = keyword.trim();
+
+        if (key.length() == 0) {
+            return -1;
+        }
 
