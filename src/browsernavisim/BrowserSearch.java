@@ -32,3 +32,18 @@ public class BrowserSearch {
         return -1;
     }
 
+ private boolean containsIgnoreCase(String text, String keyword) {
+
+        String haystack = text.toLowerCase();
+        String needle = keyword.toLowerCase();
+
+        int n = haystack.length();
+        int m = needle.length();
+
+        if (m == 0) {
+            return true;
+        }
+
+        if (m > n) {
+            return false;
+        }
