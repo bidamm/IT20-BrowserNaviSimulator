@@ -22,4 +22,13 @@ public class BrowserSearch {
         if (key.length() == 0) {
             return -1;
         }
+         for (int i = 0; i < count; i++) {
+
+            if (pages[i] != null && containsIgnoreCase(pages[i], key)) {
+                return i;
+            }
+        }
+
+        return -1;
+    }
 
