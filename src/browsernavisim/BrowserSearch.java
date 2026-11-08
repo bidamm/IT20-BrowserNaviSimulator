@@ -10,7 +10,10 @@ package browsernavisim;
  */
 public class BrowserSearch {
     public int linearSearch(String[] pages, int count, String keyword) {
+   if (pages == null || keyword == null) {
     return -1;
+    if (count < 0 || count > pages.length) {
+    return -1;
+}
+}
     
-}
-}
